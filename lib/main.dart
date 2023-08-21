@@ -1,9 +1,6 @@
 import "package:flutter/material.dart";
-import "package:adv_basics/gradient_container.dart";
+import "package:adv_basics/quiz.dart";
 
 void main() {
-  runApp(const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          body: GradientContainer())));
+  runApp(const Quiz());
 }
