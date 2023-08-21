@@ -37,7 +37,7 @@ class ResultsScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Resultados..",
+            const Text("Here are your results!",
                 style: TextStyle(
                     fontSize: 28,
                     color: Colors.white,
@@ -45,7 +45,7 @@ class ResultsScreen extends StatelessWidget {
                 textAlign: TextAlign.center),
             const SizedBox(height: 20),
             Text(
-                "Respondiste $numCorrectQuestions de $numTotalQuestions respuestas bien",
+                "You answered $numCorrectQuestions of $numTotalQuestions questions correctly",
                 style: GoogleFonts.lato(
                     fontSize: 18,
                     color: Colors.white,
@@ -56,7 +56,7 @@ class ResultsScreen extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton.icon(
                 icon: const Icon(Icons.refresh),
-                label: const Text("Volver a intentar"),
+                label: const Text("Try Again ;)"),
                 onPressed: switchScreen)
           ],
         ),

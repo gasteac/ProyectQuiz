@@ -8,13 +8,20 @@ class QuestionSummary extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 400,
-      child: SingleChildScrollView(
-        child: Column(
-          children: summaryData.map(
-            (data) {
-              return SummaryItem(data);
-            },
-          ).toList(),
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(47, 255, 255, 255),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: summaryData.map(
+              (data) {
+                return SummaryItem(data);
+              },
+            ).toList(),
+          ),
         ),
       ),
     );

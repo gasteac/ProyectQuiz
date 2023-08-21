@@ -28,7 +28,7 @@ class StartScreen extends StatelessWidget {
               backgroundColor: MaterialStateProperty.all<Color>(
                   const Color.fromARGB(255, 39, 165, 123))),
           label: Text(
-            "Comenzar",
+            "Start Quiz",
             style: GoogleFonts.lato(color: Colors.white, fontSize: 20),
           ),
           icon: const Icon(Icons.arrow_circle_right_outlined,

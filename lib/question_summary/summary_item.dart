@@ -29,10 +29,12 @@ class SummaryItem extends StatelessWidget {
         ),
         Text(itemData["correct_answer"] as String,
             style: GoogleFonts.lato(
-                color: Colors.grey, fontSize: 14, fontWeight: FontWeight.bold)),
+                color: const Color.fromARGB(255, 29, 218, 22), fontSize: 14, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 5),
         Text(itemData["user_answer"] as String,
             style: GoogleFonts.lato(
-                color: Colors.blue, fontSize: 14, fontWeight: FontWeight.bold)),
+                color: const Color.fromARGB(255, 10, 0, 151), fontSize: 14, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 10),
       ]))
     ]);
   }
